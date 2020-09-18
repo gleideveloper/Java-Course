@@ -2,7 +2,7 @@ package enum_composition.enumeracao;
 
 import java.util.Date;
 
-public class Program {
+public class ProgEnums {
     public static void main(String[] args) {
         Order order = new Order(1080,new Date(), OrderStatus.PENDING_PAYMET);
 

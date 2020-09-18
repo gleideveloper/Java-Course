@@ -9,8 +9,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Program {
+public class ProgInheritance {
     public static void main(String[] args) throws ParseException {
+
         exerciseFixation();
         /*exercisePolimorfismo();
         progrPolimorfismo();
@@ -140,13 +141,11 @@ public class Program {
             double price = sc.nextDouble();
             if (type == 'c') {
                 list.add(new Product(name, price));
-            }
-            else if (type == 'u') {
+            }else if (type == 'u') {
                 System.out.print("Manufacture date (DD/MM/YYYY): ");
                 Date date = sdf.parse(sc.next());
                 list.add(new UsedProduct(name, price, date));
-            }
-            else {
+            }else {
                 System.out.print("Customs fee: ");
                 double customsFee = sc.nextDouble();
                 list.add(new ImportedProduct(name, price, customsFee));
