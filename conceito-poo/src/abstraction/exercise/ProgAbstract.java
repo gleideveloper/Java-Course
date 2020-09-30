@@ -35,7 +35,7 @@ public class ProgAbstract {
                 System.out.print("Nome: ");
                 sc.nextLine();
                 String nome = sc.nextLine();
-                System.out.print("Renda Anual: ");
+                System.out.print( "Renda Anual: ");
                 double rendaAnual = sc.nextDouble();
                 System.out.print("Numero de funcionarios: ");
                 double numFuncionarios = sc.nextDouble();
