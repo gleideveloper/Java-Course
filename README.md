@@ -7,5 +7,5 @@
 
 ## Project Exception
 ## Type Exception customization
-1. Classs extends Exception
+1. Class extends Exception
 2. Class extends RuntimeException
