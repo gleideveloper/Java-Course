@@ -6,3 +6,6 @@
 4. Inheritance and Polymorphism
 
 ## Project Exception
+## Type Exception customization
+1. Classs extends Exception
+2. Class extends RuntimeException
