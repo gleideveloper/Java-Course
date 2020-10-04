@@ -41,4 +41,5 @@
     
 #### Chess layer and printing the board
 <b>Checklist:</b>
-| Tables | Are | Cool | |----------|:-------------:|------:| | col 1 is| left-aligned | $1600 |
+
+<img src="/project-chess-game/resources/boardChess.png" alt="Board"/>
