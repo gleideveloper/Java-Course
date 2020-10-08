@@ -1,21 +1,36 @@
-import java.io.File;
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        File file = new File("trabalhando-com-arquivos/in.txt");
-        Scanner sc = null;
+        String path = "trabalhando-com-arquivos/in.txt";
+        FileReader fr = null;
+        BufferedReader br = null;
         try {
-            sc =  new Scanner(file);
-            while (sc.hasNextLine()){
-                System.out.println(sc.nextLine());
+            fr = new FileReader(path);
+            br = new BufferedReader(fr);
+
+            String line = br.readLine();
+
+            while (line != null) {
+                System.out.println(line);
+                line = br.readLine();
             }
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if(sc != null){
-                sc.close();
+        } finally {
+            try {
+                if (br != null) {
+                    br.close();
+                }
+                if (fr != null) {
+                    fr.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }
