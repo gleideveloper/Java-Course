@@ -1,9 +1,11 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
+        handleFolderFiles();
+//        usingBufferedWriterFileWriter();
 //        usingBufferedReaderFileReader();
-        usingBufferedWriterFileWriter();
     }
 
     private static void usingBufferedReaderFileReader() {
@@ -22,17 +24,41 @@ public class Program {
         }
     }
 
-    private static void usingBufferedWriterFileWriter(){
-        String[] lines = new String[]{"Good Norming","Good Afternoon","Good night"};
+    private static void usingBufferedWriterFileWriter() {
+        String[] lines = new String[]{"Good Norming", "Good Afternoon", "Good night"};
         String path = "trabalhando-com-arquivos/out.txt";
         //append = true -> indica que o arquivo nao vai ser recriado
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))) {
-            for (String line: lines) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
+            for (String line : lines) {
                 bw.write(line);
                 bw.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private static void handleFolderFiles() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a folder path: ");
+
+        String strPath = sc.nextLine();
+        File path = new File(strPath);
+
+        File[] folders = path.listFiles(File::isDirectory);
+        System.out.println("FOLDERS: ");
+        for (File folder : folders) {
+            System.out.println(folder);
+        }
+
+        File[] files = path.listFiles(File::isFile);
+        System.out.println("FILES: ");
+        for (File file : files) {
+            System.out.println(file);
+        }
+
+        boolean success = new File(strPath + "\\subdir").mkdir();
+        System.out.println("Directory created successfully");
+        sc.close();
     }
 }
