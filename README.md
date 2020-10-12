@@ -61,7 +61,7 @@ class RentalService {
 }
 ````
 
-![Injeção de Dependência](https://github.com/gleideveloper/JavaCourse/tree/master/interfaces/src/InjeçãoDeDependência.png".jpg?raw=true)
+![Alt text](interfaces/src/InjeçãoDeDependência.png?raw=true "Injeção de Dependeência")
 
 <p><b>Inversão de controle</b></p>
 <p><b>Injeção de dependência</b></p>
