@@ -5,11 +5,9 @@ import model.entities.Vehicle;
 import model.services.BrasilTaxService;
 import model.services.RentalService;
 
-import java.awt.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class ProgramInterfaces {
@@ -21,9 +19,9 @@ public class ProgramInterfaces {
         System.out.println("Enter rental data");
         System.out.print("Car model: ");
         String carModel = sc.nextLine();
-        System.out.print("Pickup (dd/MM/yyyy hh:ss: ");
+        System.out.print("Pickup (dd/MM/yyyy hh:ss): ");
         Date start = sdf.parse(sc.nextLine());
-        System.out.print("Return (dd/MM/yyyy hh:ss: ");
+        System.out.print("Return (dd/MM/yyyy hh:ss): ");
         Date finish = sdf.parse(sc.nextLine());
 
         CarRental cr = new CarRental(start, finish, new Vehicle(carModel));
@@ -38,9 +36,9 @@ public class ProgramInterfaces {
         rentalService.processInvoice(cr);
 
         System.out.println("INVOICE:");
-        System.out.println("Basic payment: " + String.format("%2f",cr.getInvoice().getBasicPayment()));
-        System.out.println("Tax: " + String.format("%2f",cr.getInvoice().getTax()));
-        System.out.println("Total payment: " + String.format("%2f",cr.getInvoice().getTotalPayment()));
+        System.out.println("Basic payment: " + String.format("%.2f",cr.getInvoice().getBasicPayment()));
+        System.out.println("Tax: " + String.format("%.2f",cr.getInvoice().getTax()));
+        System.out.println("Total payment: " + String.format("%.2f",cr.getInvoice().getTotalPayment()));
 
         sc.close();
     }
