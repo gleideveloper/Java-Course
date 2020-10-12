@@ -21,6 +21,7 @@
 <b>Pra quê serve interfaces?</b>
 * Serve para criar sistemas com <b>baixo acomplamento e flexíveis.</b>
 <p>Exemplo:</p>
+A interface define as operações, a classe que implementar essa interface deverá implementar todas as suas operações.
 
 ```java
 interface Shape {
@@ -34,6 +35,7 @@ interface Shape {
 * A classe RentalService <b>CONHECE a dependência concreta</b>
 * Se a classe concreta mudar, é <b>preciso mudar a classe RentalService.</b>
 
+Nesse exemplo abaixo existem um alto acomplamento entre esse dois serviços, não sendo uma boa prática, sem o uso de interface.
 ```java
 class RentalService {
     (...)
@@ -48,6 +50,7 @@ class RentalService {
 * A classe RentalService <b>NÃO CONHECE a dependência concreta</b>
 * Se a classe concreta mudar, <b>a classe RentalService não muda nada</b>
 
+Nesse exemplo abaixo existem um alto acomplamento entre esse dois serviços, sem o uso de interface.
 ```java
 class RentalService {
     (...)
@@ -57,6 +60,9 @@ class RentalService {
     (...)
 }
 ````
+
+![Injeção de Dependência](https://github.com/gleideveloper/JavaCourse/tree/master/interfaces/src/InjeçãoDeDependência.png".jpg?raw=true)
+
 <p><b>Inversão de controle</b></p>
 <p><b>Injeção de dependência</b></p>
 <b>Conceitos:</b> Padrão de desenvolvimento que consiste em retirar da classe a responsabilidade de instanciar suas dependências.

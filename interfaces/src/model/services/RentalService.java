@@ -23,6 +23,7 @@ public class RentalService {
         long t2 = carRental.getFinish().getTime();
         double hours = (double) (t2 - t1) / 1000 / 60 / 60;
         double basicPayment = 0;
+
         if (hours <= 12) {
             basicPayment = Math.ceil(hours) * pricePerHour;
         } else {
