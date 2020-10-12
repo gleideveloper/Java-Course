@@ -28,7 +28,7 @@ interface Shape {
     double perimeter();
 }
 ```
-###Inversão de controle, Injeção de dependência
+### Inversão de controle, Injeção de dependência
 
 <b>Acomplamento forte.</b>
 * A classe RentalService <b>CONHECE a dependência concreta</b>
