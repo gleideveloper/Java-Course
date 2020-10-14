@@ -11,7 +11,7 @@
 
 ## Project: Chess Game System
 
-<a href="https://github.com/gleideveloper/JavaCourse/tree/master/project-chess-game" title="Project: Chess Game System">Link Project: Chess Game System</a>
+<a href="https://github.com/gleideveloper/project-chess-java" title="Project: Chess Game System">Link Project: Chess Game System</a>
 
 ## Interfaces
 <b>Conceitos:</b>
@@ -37,7 +37,7 @@ interface Shape {
 
 Nesse exemplo abaixo existem um alto acoplamento entre esse dois serviços, não sendo uma boa prática, sem o uso de interface.
 ![Alt text](interfaces/src/SolucaoSemInterfaces.png?raw=true "Forte Acoplamento")
-Se a própria classe RentalService for responsável por instanciar suas dependências, é gerado um forte acoplamento com dois pontos de alteração, um na classe RentalService e outro no programa principal.
+* A classe RentalService é responsável por instanciar suas dependências, causando um forte acoplamento com dois pontos de alteração, um na classe RentalService e outro no programa principal.
 
 ```java
 class RentalService {
@@ -54,7 +54,7 @@ class RentalService {
 * Se a classe concreta mudar, <b>a classe RentalService não muda</b>, e só é alterado em um único lugar.
 
 Nesse exemplo abaixo temos um <b>fraco acoplamento</b> entre esse dois serviços, com o uso da interface TaxService.
-![Alt text](interfaces/src/FracoAcoplamento.png?raw=true "Fraco Acoplamento")
+![Alt text](interfaces/src/SolucaoComInterfaces.png?raw=true "Fraco Acoplamento")
 
 ```java
 class RentalService {
@@ -71,12 +71,15 @@ class RentalService {
 
 ![Alt text](interfaces/src/InjeçãoDeDependência.png?raw=true "Injeção de Dependeência")
 
-Se a própria classe RentalService for responsável por instanciar suas dependências, é gerado um forte acoplamento com dois pontos de alteração, um na classe RentalService e outro no programa principal.
+Se a própria classe RentalService não deve ser responsável por instanciar suas dependências.
+
 <p><b>Inversão de controle</b></p>
-É um Padrão de desenvolvimento que consiste em retirar da classe a responsabilidade de instanciar suas dependências.
+
+É um padrão de desenvolvimento que consiste em <b>retirar da classe a responsabilidade de instanciar suas dependências.</b>
 
 <p><b>Injeção de dependência</b></p>
-É uma forma de realizar a inversão de controle: um componente externo instacia a dependência, que é então injetada no objeto "pai". Pode ser implementada de vários formas:
+
+É uma forma de <b>realizar a inversão de controle</b>: um componente externo instacia a dependência, que é então injetada no objeto "pai" através desse componente. Pode ser implementada de vários formas:
 * Construtor
 * Classe de instanciação (builder/factory)
 * Container / framework
