@@ -1,6 +1,9 @@
 # JavaCourse
 ## Conceito POO
 1. Class Abstract
+* São classes que não podem ser instanciadas.
+* É uma forma de garantir herança total: somente subclasses não abstradas podem ser instanciadas, mas nunca a superclasse abstrata.
+    * Métodos Abstratos – Os métodos abstratos estão presentes somente em classes abstratas, e são aqueles que não possuem implementação. A sintaxe deste tipo de método é a seguinte: abstract ;
 2. Enum and Composition
 3. Basic Exceptions
 4. Inheritance and Polymorphism
@@ -14,9 +17,18 @@
 <a href="https://github.com/gleideveloper/project-chess-java" title="Project: Chess Game System">Link Project: Chess Game System</a>
 
 ## Interfaces
+Enquanto uma classe abstrata pode define tanto métodos abstratos quanto não-abstratos, uma interface só pode ter métodos abstratos.
+Elas apresetam muito pouca flexibilidade em relação aos seus métodos e variáveis declarados.
+
+<b>As regras são restritas:</b>
+* Todos o métodos de interface <i><b>são implicitamente public e abstract</b></i>, ou seja, não precisa digitar os modificadores de acesso
+ <i><b>public ou abstract</b></i>, na declaração dos métodos.
+
 <b>Conceitos:</b>
-* Interface é um <b>tipo que define um conjunto de operações</b> que uma classe deve implementar.
-* Interface estabelece um <b>contrato.</b>
+* É uma espécie de <b>superclasse 100% abstrata</b> que define os métodos que uma subclasse.
+* É um <b>tipo que define um conjunto de operações</b> que uma classe deve implementar.
+* Quando uma interface implementada <b>é estabelecido um contrato</b>, qualquer tipo de classe que implementar essa interface
+precisa concordar em escrever o código dos métodos desse contrato.
 
 <b>Pra quê serve interfaces?</b>
 * Serve para criar sistemas com <b>baixo acoplamento e flexíveis.</b>
