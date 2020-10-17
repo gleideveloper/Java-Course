@@ -10,8 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ProgInheritance {
-    public static void main(String[] args) throws ParseException {
 
+    public static void main(String[] args) throws ParseException {
         exerciseFixation();
         /*exercisePolimorfismo();
         progrPolimorfismo();
@@ -23,6 +23,7 @@ public class ProgInheritance {
      * Sobrecarga ou Sobreposição: É a implementação do método da superclasse no método da subclasse.
      */
     public static void progSobreCarga(){
+
         Account account = new Account(1001, "Alex", 1000.0);
         account.withdraw(200.0);
         System.out.println(account.getBalance());

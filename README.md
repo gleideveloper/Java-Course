@@ -1,12 +1,32 @@
 # JavaCourse
 ## Conceito POO
-1. Class Abstract
-* São classes que não podem ser instanciadas.
-* É uma forma de garantir herança total: somente subclasses não abstradas podem ser instanciadas, mas nunca a superclasse abstrata.
-    * Métodos Abstratos – Os métodos abstratos estão presentes somente em classes abstratas, e são aqueles que não possuem implementação. A sintaxe deste tipo de método é a seguinte: abstract ;
-2. Enum and Composition
-3. Basic Exceptions
-4. Inheritance and Polymorphism
+1. Classe: É um modelo que decreve os tipos de <b>estado e comportamento</b> que os objetos do seu tipo podem ter.
+
+2. Obejto: No tempo de execução, quando JVM encontra a palavra <b>new</b>, ela usa a classe (molde do objeto)
+apropiada para criar um objeto que será uma instância dessa classe, e terá seu próprio estado e acesso a todos
+os comportamentos definidos por sua classe. 
+
+3. Classe Abstrata: São classes que não podem ser instanciadas, ou seja, somente <b>subclasses não abstradas podem
+ser instanciadas</b>. Seu propósito, missão na vida, é ser estendida (subclassificada) .
+
+## Herança
+
+1. Herança: É um tipo de associação que permite que uma classe herde todos os dados e comportamentos de outra.
+    * Vantangens:
+        * Reuso: Herança permite o reuso de atributos e métodos (dados e comportamentos)
+        * Polimorfismo: É o recurso que permite que variáveis de um mesmo tipo mais genérico possam
+    apontar para obejtos tipos específicos, tendo assim comportamento diferentes conforme cada tipo.
+
+    ![Alt text](conceito-poo/src/Inheritance_polymorphism/Herança-polimorfismo.png?raw=true "Herança & Polimorfismo")
+    
+2. Encapsulamento: Vem de encapsular, que em programação orientada a objetos significa separar o programa em partes,
+o mais isolado possível. A idéia é tornar o software mais flexível, fácil de modificar e de criar novas implementações.
+O Encapsulamento serve para controlar o acesso aos atributos e métodos de uma classe.
+    * O encapsulamento que é dividido em dois níveis:
+        * Nível de classe: Quando determinamos o acesso de uma classe inteira que pode ser public ou Package-Private (padrão);
+        * Nível de membro: Quando determinamos o acesso de atributos ou métodos de uma classe que podem ser public, private, protected ou Package-Private (padrão).
+    * Modificadores de Acesso: Eles são palavras chave que permitem o acesso, dependendo de alguns níveis a atributos, métodos e classes e derivados. São essenciais para utilizar o conceito de Encapsulamento.
+    ![Alt text](conceito-poo/src/Inheritance_polymorphism/Modificadores-de-acesso.png?raw=true "Modificadores de Acesso")
 
 ## Type Exception customization
 1. Class extends Exception
@@ -20,9 +40,15 @@
 Enquanto uma classe abstrata pode define tanto métodos abstratos quanto não-abstratos, uma interface só pode ter métodos abstratos.
 Elas apresetam muito pouca flexibilidade em relação aos seus métodos e variáveis declarados.
 
-<b>As regras são restritas:</b>
+<b>As regras restritas de uma interface:</b>
 * Todos o métodos de interface <i><b>são implicitamente public e abstract</b></i>, ou seja, não precisa digitar os modificadores de acesso
  <i><b>public ou abstract</b></i>, na declaração dos métodos.
+ * Todas as variáveis definidas em uma interface devem ser <i><b>public, static e final</b></i>, ou seja, <b>as interfaces
+ só podem declarar constantes</b> e não variáveis de instâncias.
+ * Os métodos não podem ser <b>static</b>.
+ * Uma interface pode <b>estender uma ou mais interfaces diferentes.</b>
+ * Uma interface não pode <b>estender nada que não seja outra interface.</b>
+ * Uma interface não pode <b>implementar outrar interface ou classe.</b>
 
 <b>Conceitos:</b>
 * É uma espécie de <b>superclasse 100% abstrata</b> que define os métodos que uma subclasse.
