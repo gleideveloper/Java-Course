@@ -121,3 +121,7 @@ Se a própria classe RentalService não deve ser responsável por instanciar sua
 * Construtor
 * Classe de instanciação (builder/factory)
 * Container / framework
+
+<p><b>Exercício de fixação</b></p>
+
+![Alt text](interfaces/src/exercicio_de_fixacao/exercicio_de_fixacao_uml.png?raw=true "Modificadores de Acesso")
