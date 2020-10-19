@@ -125,3 +125,17 @@ Se a própria classe RentalService não deve ser responsável por instanciar sua
 <p><b>Exercício de fixação</b></p>
 
 ![Alt text](interfaces/src/exercicio_de_fixacao/exercicio_de_fixacao_uml.png?raw=true "Modificadores de Acesso")
+
+#### Diferença Fundamental entre Herdar(Herança) vs Comprir Contrato(Interfaces)
+
+<p><b>Aspectos em comum entre Herança e Interfaces</b></p>
+
+* Relação é-um
+* Generalização/Especialização
+* Polimorfismo
+
+<p>Herança: Quando usamos herança temos o <b>reuso de informações e comportamentos.</b></p>
+
+<p>Interface: Quando usamos interfaces termos um <b>contrato a ser cumprido.</b></p>
+
+![Alt text](interfaces/src/Heranca_vs_Interfaces.png?raw=true "Modificadores de Acesso")

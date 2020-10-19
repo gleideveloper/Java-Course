@@ -4,10 +4,10 @@
   <OriginalElement>model.entities</OriginalElement>
   <nodes>
     <node x="-8.0" y="333.0">model.services.BrasilTaxService</node>
-    <node x="-18.5" y="-3.0">model.services.RentalService</node>
     <node x="4.0" y="213.0">model.services.TaxService</node>
-    <node x="229.0" y="208.5">model.entities.Invoice</node>
+    <node x="-18.5" y="-3.0">model.services.RentalService</node>
     <node x="294.0" y="-2.5">model.entities.CarRental</node>
+    <node x="229.0" y="208.5">model.entities.Invoice</node>
     <node x="-25.0" y="441.5">model.entities.Vehicle</node>
   </nodes>
   <notes />
@@ -18,9 +18,7 @@
     </edge>
   </edges>
   <settings layout="Orthogonal" zoom="1.0" x="240.5" y="258.0" />
-  <SelectedNodes>
-    <node>model.services.BrasilTaxService</node>
-  </SelectedNodes>
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

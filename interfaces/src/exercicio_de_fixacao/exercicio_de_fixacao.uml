@@ -3,45 +3,48 @@
   <ID>JAVA</ID>
   <OriginalElement>exercicio_de_fixacao</OriginalElement>
   <nodes>
-    <node x="410.5" y="277.5">exercicio_de_fixacao.model.entities.Contract</node>
-    <node x="705.5" y="545.5">exercicio_de_fixacao.model.entities.Installment</node>
-    <node x="99.0" y="-20.5">exercicio_de_fixacao.model.services.PaypalService</node>
-    <node x="57.0" y="288.0">exercicio_de_fixacao.model.services.ContractService</node>
-    <node x="96.0" y="162.0">exercicio_de_fixacao.model.services.OnlinePaymentService</node>
+    <node x="250.5" y="277.5">exercicio_de_fixacao.model.entities.Contract</node>
+    <node x="-14.5" y="-14.5">exercicio_de_fixacao.model.entities.Installment</node>
+    <node x="537.0" y="288.0">exercicio_de_fixacao.model.services.ContractService</node>
+    <node x="579.0" y="619.5">exercicio_de_fixacao.model.services.PaypalService</node>
+    <node x="576.0" y="482.0">exercicio_de_fixacao.model.services.OnlinePaymentService</node>
   </nodes>
   <notes />
   <edges>
     <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.services.OnlinePaymentService">
-      <point x="0.0" y="-72.0" />
-      <point x="0.0" y="38.0" />
+      <point x="143.0" y="-0.0" />
+      <point x="880.0" y="360.0" />
+      <point x="880.0" y="520.0" />
+      <point x="104.0" y="-0.0" />
     </edge>
     <edge source="exercicio_de_fixacao.model.services.PaypalService" target="exercicio_de_fixacao.model.services.OnlinePaymentService">
-      <point x="0.0" y="60.5" />
-      <point x="0.0" y="-38.0" />
-    </edge>
-    <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.entities.Installment">
-      <point x="0.0" y="72.0" />
-      <point x="200.0" y="640.0" />
-      <point x="-94.5" y="-0.0" />
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="38.0" />
     </edge>
     <edge source="exercicio_de_fixacao.model.entities.Contract" target="exercicio_de_fixacao.model.entities.Installment">
-      <point x="109.5" y="-0.0" />
-      <point x="760.0" y="360.0" />
-      <point x="-40.0" y="-94.5" />
+      <point x="0.0" y="82.5" />
+      <point x="360.0" y="520.0" />
+      <point x="80.0" y="520.0" />
+      <point x="0.0" y="94.5" />
+    </edge>
+    <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.entities.Installment">
+      <point x="0.0" y="-72.0" />
+      <point x="680.0" y="80.0" />
+      <point x="94.5" y="-0.0" />
     </edge>
     <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.entities.Contract">
-      <point x="143.0" y="-0.0" />
-      <point x="-109.5" y="-0.0" />
+      <point x="-143.0" y="-0.0" />
+      <point x="109.5" y="-0.0" />
     </edge>
   </edges>
-  <settings layout="Directed Orthogonal" zoom="1.0" x="569.5" y="358.5" />
+  <settings layout="Directed Orthogonal" zoom="1.0" x="427.5" y="389.5" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
-    <Category>Constructors</Category>
     <Category>Methods</Category>
     <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
