@@ -11,40 +11,21 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.services.OnlinePaymentService">
-      <point x="143.0" y="-0.0" />
-      <point x="880.0" y="360.0" />
-      <point x="880.0" y="520.0" />
-      <point x="104.0" y="-0.0" />
-    </edge>
     <edge source="exercicio_de_fixacao.model.services.PaypalService" target="exercicio_de_fixacao.model.services.OnlinePaymentService">
       <point x="0.0" y="-60.5" />
       <point x="0.0" y="38.0" />
     </edge>
-    <edge source="exercicio_de_fixacao.model.entities.Contract" target="exercicio_de_fixacao.model.entities.Installment">
-      <point x="0.0" y="82.5" />
-      <point x="360.0" y="520.0" />
-      <point x="80.0" y="520.0" />
-      <point x="0.0" y="94.5" />
-    </edge>
-    <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.entities.Installment">
-      <point x="0.0" y="-72.0" />
-      <point x="680.0" y="80.0" />
-      <point x="94.5" y="-0.0" />
-    </edge>
-    <edge source="exercicio_de_fixacao.model.services.ContractService" target="exercicio_de_fixacao.model.entities.Contract">
-      <point x="-143.0" y="-0.0" />
-      <point x="109.5" y="-0.0" />
-    </edge>
   </edges>
-  <settings layout="Directed Orthogonal" zoom="1.0" x="427.5" y="389.5" />
-  <SelectedNodes />
+  <settings layout="Directed Orthogonal" zoom="1.0" x="404.0" y="363.0" />
+  <SelectedNodes>
+    <node>exercicio_de_fixacao.model.entities.Contract</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
+    <Category>Constructors</Category>
     <Category>Methods</Category>
     <Category>Properties</Category>
     <Category>Inner Classes</Category>
-    <Category>Constructors</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
