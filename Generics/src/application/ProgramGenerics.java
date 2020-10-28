@@ -8,13 +8,13 @@ public class ProgramGenerics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        PrintService<Integer> ps = new PrintService<>();
+        PrintService<String> ps = new PrintService<>();
 
         System.out.print("Hom many values? ");
         int n = sc.nextInt();
 
         for (int i = 0; i < n; i++) {
-            Integer value = sc.nextInt();
+            String value = sc.next();
             ps.addValue(value);
         }
 
