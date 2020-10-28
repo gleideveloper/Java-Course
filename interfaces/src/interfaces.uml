@@ -18,7 +18,9 @@
     </edge>
   </edges>
   <settings layout="Orthogonal" zoom="1.0" x="240.5" y="258.0" />
-  <SelectedNodes />
+  <SelectedNodes>
+    <node>model.services.BrasilTaxService</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

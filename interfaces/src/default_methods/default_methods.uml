@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>default_methods</OriginalElement>
+  <nodes>
+    <node x="0.0" y="127.0">default_methods.services.BrazilInterestService</node>
+    <node x="236.0" y="127.0">default_methods.services.UsaInterestService</node>
+    <node x="119.5" y="0.0">default_methods.services.InterestService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="default_methods.services.UsaInterestService" target="default_methods.services.InterestService">
+      <point x="0.0" y="-38.5" />
+      <point x="333.0" y="102.0" />
+      <point x="271.0" y="102.0" />
+      <point x="50.5" y="38.5" />
+    </edge>
+    <edge source="default_methods.services.BrazilInterestService" target="default_methods.services.InterestService">
+      <point x="0.0" y="-38.5" />
+      <point x="108.0" y="102.0" />
+      <point x="170.0" y="102.0" />
+      <point x="-50.5" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="215.0" y="102.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

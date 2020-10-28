@@ -139,3 +139,15 @@ Se a própria classe RentalService não deve ser responsável por instanciar sua
 <p>Interface: Quando usamos interfaces termos um <b>contrato a ser cumprido.</b></p>
 
 ![Alt text](interfaces/src/Heranca_vs_Interfaces.png?raw=true "Modificadores de Acesso")
+
+#### Métodos Default e Herança Múltipla em Interface
+
+<p><b>Considerações Importantes sobre a mudança de interface a partir do Java 8</b></p>
+
+* As interfaces podem agora prover reuso de código
+* Temos agora uma forma de herança múltipla
+    * Mas, o compilador reclama se houver mais de um método com a mesma assinatura, obrigando a sobreescreve-lo
+* As interfaces ainda são bem diferentes de classes abstratas.
+    * Interfaces NÃO possuem recursos tais como contrutores e atributos
+
+![Alt text](interfaces/src/default_methods/default_methods.png?raw=true "Métodos Default")

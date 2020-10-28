@@ -1,8 +1,9 @@
 package default_methods.application;
 
 import default_methods.services.BrazilInterestService;
+import default_methods.services.InterestService;
+import default_methods.services.UsaInterestService;
 
-import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -16,7 +17,12 @@ public class ProgramDefaultMethods {
         System.out.println("Months: ");
         int months = sc.nextInt();
 
-        BrazilInterestService is = new BrazilInterestService(2.0);
+        //Sem interface
+        //BrazilInterestService is = new BrazilInterestService(2.0);
+
+        //Com interface
+        //InterestService is = new BrazilInterestService(2.0);
+        InterestService is = new UsaInterestService(1.0);
         double payment = is.payment(amount, months);
 
         System.out.println("Payment after " + months + " months: ");
