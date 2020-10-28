@@ -8,7 +8,7 @@ public class ProgramGenerics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        PrintService ps = new PrintService();
+        PrintService<Integer> ps = new PrintService<>();
 
         System.out.print("Hom many values? ");
         int n = sc.nextInt();
