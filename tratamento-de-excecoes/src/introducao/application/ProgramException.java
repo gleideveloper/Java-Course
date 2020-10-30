@@ -1,4 +1,4 @@
-package application;
+package introducao.application;
 
 import model.entities.Reservation;
 import model.exceptions.DomainException;

@@ -1,4 +1,4 @@
-package application;
+package introducao.application;
 
 import model.entities.CarRental;
 import model.entities.Vehicle;
