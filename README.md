@@ -189,6 +189,18 @@ myObjs = myNumbers;
 
 ![Alt text](Generics/src/generics_curinga/generics_curinga_noAdd.png?raw=true "Generics Delimitados")
 
+<p><b>Curingas delimitados (bounded wildcards): Problema 1</b></p>
+
+![Alt text](Generics/src/generico_delimitado/generics_curinga_problem1.png?raw=true "Generics Delimitados")
+* Método totalArea recebe uma lista de qualquer tipo de seja um subtipo de shape
+* Não sendo possível a adição de elementos nessa lista
+
+![Alt text](Generics/src/generico_delimitado/generics_curinga_problem1.1.png?raw=true "Generics Delimitados")
+
+<p><b>Princípio get/put - COVARIÂNCIA: Problema 2</b></p>
+
+
+     
 #### Set
 
 #### Map
