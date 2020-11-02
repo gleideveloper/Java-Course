@@ -8,7 +8,7 @@ public class ProgramCuringa {
         List<Integer> myInts = Arrays.asList(5, 2, 10);
         printList(myInts);
 
-        List<String> myStrs = Arrays.asList("João","Gabriel","Ana","Rosa");
+        List<String> myStrs = Arrays.asList("João", "Gabriel", "Ana", "Rosa");
         printList(myStrs);
     }
 
@@ -17,5 +17,4 @@ public class ProgramCuringa {
             System.out.println(obj);
         }
     }
-
 }

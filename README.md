@@ -185,6 +185,10 @@ myObjs = myNumbers;
 ````
 ![Alt text](Generics/src/generics_curinga/generics_curinga.png?raw=true "Generics Delimitados")
 
+<p><b>Porém não é possível adicionar dados a uma coleção de tipo curinga</b></p>
+
+![Alt text](Generics/src/generics_curinga/generics_curinga_noAdd.png?raw=true "Generics Delimitados")
+
 #### Set
 
 #### Map
