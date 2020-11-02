@@ -151,3 +151,40 @@ Se a própria classe RentalService não deve ser responsável por instanciar sua
     * Interfaces NÃO possuem recursos tais como contrutores e atributos
 
 ![Alt text](interfaces/src/default_methods/default_methods.png?raw=true "Métodos Default")
+
+### Generics, Set e Map
+
+#### Generics
+Generics permitem que classes, interfaces e métodos possam ser parametrizados por tipo.
+<p><b>Quais são seu benefícios:</b></p>
+
+* Reuso
+* Type safety
+* Performance
+
+<p><b>Generics Delimitados</b></p>
+
+![Alt text](Generics/src/generico_delimitado/generics_delimitado.png?raw=true "Generics Delimitados")
+
+<p><b>Generics Tipos Curinga (wildcard type)</b></p>
+
+Uma lista de Objetos não é o supertipo de qualquer tipo de lista:
+```java
+//List<Object> não é o supertipo e irá dá um erro de compilação
+List<Object> myObjs = new ArrayList<Object>();
+List<Integer> myNumbers = new ArrayList<Integer>();
+myObjs = myNumbers; // erro de compilação
+````
+
+O supertipo de qualquer tipo de lista é List<?>
+```java
+//List<T> É o supertipo e não irá dá um erro de compilação
+List<?> myObjs = new ArrayList<Object>();
+List<Integer> myNumbers = new ArrayList<Integer>();
+myObjs = myNumbers;
+````
+![Alt text](Generics/src/generics_curinga/generics_curinga.png?raw=true "Generics Delimitados")
+
+#### Set
+
+#### Map
