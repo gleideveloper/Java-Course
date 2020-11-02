@@ -163,6 +163,8 @@ Generics permitem que classes, interfaces e métodos possam ser parametrizados p
 * Performance
 
 <p><b>Generics Delimitados</b></p>
+O Generics é delimitado pelos caracteres “<>”, ou seja, quando houver esse par de caracteres em uma parte qualquer do código,
+significa que o Generics está sendo utilizado. Vejamos um exemplo simples abaixo.
 
 ![Alt text](Generics/src/generico_delimitado/generics_delimitado.png?raw=true "Generics Delimitados")
 
@@ -183,7 +185,6 @@ List<?> myObjs = new ArrayList<Object>();
 List<Integer> myNumbers = new ArrayList<Integer>();
 myObjs = myNumbers;
 ````
-![Alt text](Generics/src/generics_curinga/generics_curinga.png?raw=true "Generics Delimitados")
 
 <p><b>Porém não é possível adicionar dados a uma coleção de tipo curinga</b></p>
 
@@ -197,10 +198,60 @@ myObjs = myNumbers;
 
 ![Alt text](Generics/src/generico_delimitado/generics_curinga_problem1.1.png?raw=true "Generics Delimitados")
 
-<p><b>Princípio get/put - COVARIÂNCIA: Problema 2</b></p>
+<p><b>Princípio get/put - COVARIÂNCIA [ get : OK / put : ERROR ]</b></p>
+
+* Qualquer tipo de uma lista mais específica seja atribuida a lista de tipo mais genérica.
+```Java
+        List<Integer> intList = new ArrayList<>();
+        intList.add(10);
+        intList.add(5);
+
+        //Lista de qualquer tipo que seja subtipo de number
+        List<? extends Number> list = intList;
+
+        //GET: É PERMITIDO PEGAR ELEMENTO E ATRIBUIR
+        Number x = list.get(0);
+``` 
+* Quanto a operação de GET de acesso aos elementos é permitida e a operação de PUT não.
+![Alt text](Generics/src/generics_principio_get_put/covariancia.png?raw=true "Generics Delimitados")
 
 
-     
+<p><b>Princípio get/put - CONTRAVARIÂNCIA [ get : ERROR / put : OK ]</b></p>
+
+```Java
+        List<Object> myObjts = new ArrayList<>();
+        myObjts.add("Maria");
+        myObjts.add("Alex");
+
+        //Lista de qualquer tipo SUPER de number
+        List<? super Number> myNumbers = myObjts;
+
+        //PUT: É PERMITIDO ADICIONAR
+        myNumbers.add(10);
+        myNumbers.add(3.14);
+```
+
+
+Convariância é quanto a operação de PUT adicão dos elementos é permitida e a operação de GET não.
+![Alt text](Generics/src/generics_principio_get_put/contravariancia.png?raw=true "Generics Delimitados")
+
+<p><b>Curingas delimitados (princípio get/put): Problema 2</b></p>
+* Vamos fazer um método que copie os elementos de uma lista para uma outra lista
+que poder ser mais genérica que a primeira
+
+```java
+        List<Integer> myInts = Arrays.asList(1, 2, 3, 4);
+        List<Double> myDoubles = Arrays.asList(3.14, 6.28);
+        List<Object> myObjs = new ArrayList<Object>();
+        
+        copy(myInts, myObjs);
+        printList(myObjs);
+        copy(myDoubles, myObjs);
+        printList(myObjs);
+```
+
+![Alt text](Generics/src/generics_principio_get_put/problema2.png?raw=true "Generics Delimitados")
+  
 #### Set
 
 #### Map
