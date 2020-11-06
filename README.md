@@ -1,6 +1,6 @@
 # JavaCourse
 ## Conceito POO
-1. Classe: É um modelo que decreve os tipos de <b>estado e comportamento</b> que os objetos do seu tipo podem ter.
+1. Classe: É um modelo que descreve os tipos de <b>estado e comportamento</b> que os objetos do seu tipo podem ter.
 
 2. Obejto: No tempo de execução, quando JVM encontra a palavra <b>new</b>, ela usa a classe (molde do objeto)
 apropiada para criar um objeto que será uma instância dessa classe, e terá seu próprio estado e acesso a todos
