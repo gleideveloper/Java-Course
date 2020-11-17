@@ -252,6 +252,3 @@ que poder ser mais genérica que a primeira
 
 ![Alt text](Generics/src/generics_principio_get_put/problema2.png?raw=true "Generics Delimitados")
   
-#### Set
-
-#### Map
