@@ -1,4 +1,4 @@
-package entities;
+package Map.entities;
 
 import java.util.Objects;
 
@@ -27,7 +27,7 @@ public class Produto {
         this.price = price;
     }
 
-    @Override
+    /*@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -39,5 +39,5 @@ public class Produto {
     @Override
     public int hashCode() {
         return Objects.hash(name, price);
-    }
+    }*/
 }

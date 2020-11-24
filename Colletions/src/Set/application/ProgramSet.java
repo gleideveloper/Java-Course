@@ -1,6 +1,6 @@
-package application;
+package Set.application;
 
-import entities.Produto;
+import Set.entities.Produto;
 
 import java.util.*;
 
