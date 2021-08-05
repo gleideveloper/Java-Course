@@ -8,8 +8,8 @@
     <node x="271.5" y="179.0">problema_diamante.Device</node>
     <node x="-4.0" y="533.0">problema_diamante.ProgramDiamante</node>
     <node x="271.5" y="390.5">problema_diamante.Scanner</node>
-    <node x="271.5" y="-9.5">problema_diamante.Printer</node>
     <node x="10.0" y="13.0">problema_diamante.IPrinter</node>
+    <node x="271.5" y="-9.5">problema_diamante.Printer</node>
   </nodes>
   <notes />
   <edges>
@@ -42,8 +42,10 @@
       <point x="58.0" y="0.0" />
     </edge>
   </edges>
-  <settings layout="Orthogonal" zoom="1.0" x="360.0" y="203.0" />
-  <SelectedNodes />
+  <settings layout="Orthogonal" zoom="1.0" x="219.0" y="288.5" />
+  <SelectedNodes>
+    <node>problema_diamante.IScanner</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

@@ -1,6 +1,7 @@
 package application;
 
 import entities.Product;
+import util_interfaces_funcionais.MyComparator;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -37,7 +38,7 @@ public class ProgramFuncional {
         /* 4º forma passando uma expressao Lambda[Arrow Function] e definindo um função anômima */
         Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
-        list.sort(comp);
+        list.sort(new MyComparator());
 
         for (Product p : list) {
             System.out.println(p);

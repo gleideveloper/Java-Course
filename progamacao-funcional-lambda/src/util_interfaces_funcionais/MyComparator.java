@@ -1,4 +1,4 @@
-package application;
+package util_interfaces_funcionais;
 
 import entities.Product;
 

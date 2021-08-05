@@ -3,7 +3,20 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        handleFolderFiles();
+//        int x =-17;
+//        int y = 17;
+//        int z = 29;
+//
+//
+//        for (int i = 3; i <= 7; i++) {
+//            x = x + 3 * i;
+//            y = x + z;
+//            z = z - 2 * i;
+//        }
+//        System.out.println("Resposta: x = " + x);
+//        System.out.println("Resposta: y = " + y);
+//        System.out.println("Resposta: z = " + z);
+//        handleFolderFiles();
 //        usingBufferedWriterFileWriter();
 //        usingBufferedReaderFileReader();
     }
