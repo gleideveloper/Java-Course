@@ -1,7 +1,7 @@
 package application;
 
 import entities.Product;
-import util_interfaces_funcionais.MyComparator;
+import util_interfaces_funcionais.comparator.MyComparator;
 
 import java.util.ArrayList;
 import java.util.Comparator;

@@ -1,7 +1,7 @@
 package default_methods.services;
 
 public class UsaInterestService implements InterestService {
-    private double interestRate;
+    private final double interestRate;
 
     public UsaInterestService(double interestRate) {
         this.interestRate = interestRate;

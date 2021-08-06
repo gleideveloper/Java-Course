@@ -1,4 +1,4 @@
-package util_interfaces_funcionais;
+package util_interfaces_funcionais.comparator;
 
 import entities.Product;
 
